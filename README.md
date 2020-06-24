@@ -1,5 +1,5 @@
-# interview
-
+# Dhiyo Assignment Screen 1
+Flutter Screen Implementaion as requested by Dhiyo
 A new Flutter application.
 
 ## Getting Started
