@@ -16,10 +16,10 @@ class _ScreenOneState extends State<ScreenOne> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.white,
-        body: ListView(
+        home: Scaffold(
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: ListView(
           children: <Widget>[
             TopDiv(), //Top Div
             MiddleDIv(), //Middle Div

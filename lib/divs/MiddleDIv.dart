@@ -42,17 +42,13 @@ class MiddleDIv extends StatelessWidget {
                 ),
                 Text(
                   "Calories",
-                  style: TextStyle(
-                    fontSize: 17,
-                  ),
+                  style: TextStyle(fontSize: 17, color: Colors.black54),
                 ),
                 SizedBox(
                   width: 18,
                 ),
                 Text("Distance",
-                    style: TextStyle(
-                      fontSize: 17,
-                    )),
+                    style: TextStyle(fontSize: 17, color: Colors.black54)),
               ],
             ),
           ),

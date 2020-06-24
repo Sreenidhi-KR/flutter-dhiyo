@@ -39,8 +39,13 @@ class TopDiv extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.fromLTRB(30, 0, 27, 20),
                 child: CircleAvatar(
-                  backgroundColor: Colors.white,
-                  radius: 50,
+                  backgroundColor: Colors.purple[400],
+                  radius: 55,
+                  child: CircleAvatar(
+                    radius: 50,
+                    backgroundImage: NetworkImage(
+                        "https://i.pinimg.com/originals/17/1e/e7/171ee7a7a6a237869827a5b93aec2920.jpg"),
+                  ),
                 ),
               ),
               Column(
