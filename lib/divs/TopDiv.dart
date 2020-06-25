@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:badges/badges.dart';
 
 class TopDiv extends StatelessWidget {
   const TopDiv({
@@ -38,14 +39,29 @@ class TopDiv extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.fromLTRB(30, 0, 27, 20),
-                child: CircleAvatar(
-                  backgroundColor: Colors.purple[400],
-                  radius: 55,
-                  child: CircleAvatar(
-                    radius: 50,
-                    backgroundImage: NetworkImage(
-                        "https://i.pinimg.com/originals/17/1e/e7/171ee7a7a6a237869827a5b93aec2920.jpg"),
-                  ),
+                child: Stack(
+                  children: <Widget>[
+                    Badge(
+                      badgeColor: Colors.white,
+                      shape: BadgeShape.square,
+                      padding: EdgeInsets.only(
+                          left: 10, right: 10, top: 3, bottom: 3),
+                      position: BadgePosition(top: 92),
+                      borderRadius: 30,
+                      toAnimate: false,
+                      badgeContent: Text('13 M',
+                          style: TextStyle(color: Colors.deepPurple)),
+                      child: CircleAvatar(
+                        backgroundColor: Colors.purple[400],
+                        radius: 55,
+                        child: CircleAvatar(
+                          radius: 50,
+                          backgroundImage: NetworkImage(
+                              "https://i.pinimg.com/originals/17/1e/e7/171ee7a7a6a237869827a5b93aec2920.jpg"),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Column(
@@ -124,3 +140,15 @@ class Counter extends StatelessWidget {
     );
   }
 }
+
+// Positioned(
+//                      top: 95,
+//                      left: 35,
+//                      child: Container(
+//                        height: 20,
+//                        width: 40,
+//                        decoration: BoxDecoration(
+//                          color: Colors.red,
+//                        ),
+//                      ),
+//                    ),
